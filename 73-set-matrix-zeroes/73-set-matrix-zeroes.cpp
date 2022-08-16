@@ -19,8 +19,6 @@ public:
             for(int j=0; j<m; j++)
               if(v1[i]==0 || v2[j]==0)
                matrix[i][j]=0;
-                
-                
         }
     }
 };
