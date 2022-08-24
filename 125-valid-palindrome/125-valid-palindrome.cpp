@@ -6,6 +6,8 @@ public:
         {
             if(s[i]>='A'&& s[i]<='Z'||s[i]>='a'&& s[i]<='z'||s[i]>='0'&& s[i]<='9')
                 t+= tolower(s[i]);
+            else 
+                continue;
         }
         s=t;
         reverse(s.begin(),s.end());
