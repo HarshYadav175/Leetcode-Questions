@@ -9,12 +9,7 @@ public:
             
          if(nums[i]>nums[j]){
              
-             int temp=nums[i];
-             
-             nums[i]=nums[j];
-             
-             nums[j]=temp;
-             
+            swap(nums[j], nums[i]);
     }
         }
         }
