@@ -6,7 +6,7 @@ public:
             
         int ans = pow(2, i);
         
-        if(ans==n){
+        if(ans == n){
             
             return true;
         }
