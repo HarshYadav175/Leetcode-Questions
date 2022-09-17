@@ -10,7 +10,8 @@ public:
         
         int secondlast = fib(n-2);
         
-        return last + secondlast;
+        int ans = last + secondlast;
         
+        return ans;
     }
 };
