@@ -23,9 +23,9 @@ public:
         if (root->left == NULL || root->right == NULL)
           return 1+max(l,r);
         
-        int ans = min(r, l);
+        //int ans = min(r, l);
         
-        return 1+ans;
+        return 1+min(r, l);
     }
     
 };
