@@ -73,7 +73,8 @@ int MyStack :: pop()
         return -1;
     }  
     else{
-        int n=top--;
+        int n=top;
+        top--;
         return arr[n];
     }
     
