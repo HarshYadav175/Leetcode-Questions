@@ -7,7 +7,7 @@ public:
         int r = 0;
         int c = m - 1;
 
-        while (r <= n - 1 && c >= 0) {
+        while (r <= n-1 && c >= 0) {
             if (matrix[r][c] == target) {
                 return true;
             }
