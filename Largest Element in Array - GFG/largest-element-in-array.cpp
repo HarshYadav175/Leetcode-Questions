@@ -12,7 +12,7 @@ class Solution
 public:
     int largest(vector<int> &arr, int n)
     {
-        int maxNO=INT_MIN;
+        int maxNO=0;
         for(int i=0;i<n;i++){
             maxNO=max(maxNO, arr[i]);
         }
