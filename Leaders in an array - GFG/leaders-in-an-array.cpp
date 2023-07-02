@@ -15,7 +15,7 @@ class Solution{
                
          vector<int> ans;
                
-        int maximum = INT_MIN;
+        int maximum = 0;
         
         for (int i = n - 1; i >= 0; i--) {
             if (a[i] >= maximum) {
