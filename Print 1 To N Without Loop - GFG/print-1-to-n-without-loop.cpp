@@ -9,12 +9,12 @@ class Solution{
     //Complete this function
     void printNos(int N)
     {
-                if (N <= 0) {
+        if (N <= 0) {
             return;
         }
 
         printNos(N - 1);
-        std::cout << N << " ";
+        cout << N << " ";
     
     }
 };
