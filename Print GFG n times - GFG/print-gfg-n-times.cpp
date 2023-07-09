@@ -10,9 +10,10 @@ class Solution {
         
         if(N > 0){
         cout<<"GFG"<<" ";
-        
         printGfg(N - 1);
+        
     }
+    
     }
 };
 
