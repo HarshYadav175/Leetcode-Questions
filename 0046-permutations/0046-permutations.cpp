@@ -5,7 +5,7 @@ class Solution {
     void recurpermute(int index, vector<int> &nums, vector<vector<int>> &ans){
         
         int n = nums.size();
-        if(index == n){
+        if(index == n-1){
             ans.push_back(nums);
             return;
         }
