@@ -50,9 +50,6 @@ public:
     vector<int> searchRange(vector<int>& nums, int target) {
         int n = nums.size();
         int first = firstoccurance(nums, n, target);
-        if(first == -1){
-            return {-1, -1};
-        }
         int last = lastoccurance(nums, n, target);
         return {first, last};
     }
