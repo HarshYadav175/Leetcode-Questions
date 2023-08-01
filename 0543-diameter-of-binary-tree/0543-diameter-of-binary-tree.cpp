@@ -12,7 +12,7 @@
 class Solution {
 public:
     
-    int diameter  = 0;
+    int diameter = 0;
     
     int height(TreeNode* root) {
         
@@ -30,7 +30,6 @@ public:
     
     int diameterOfBinaryTree(TreeNode* root) {
     
-        //int diameter = 0;
         height(root);
         return diameter;
     }
