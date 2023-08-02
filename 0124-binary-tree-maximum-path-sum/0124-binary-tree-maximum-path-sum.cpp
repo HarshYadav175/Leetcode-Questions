@@ -34,8 +34,6 @@ public:
     
     int maxPathSum(TreeNode* root) {
         
-        //int maxi = INT_MIN;
-        
         solve(root);
         
         return maxi;
