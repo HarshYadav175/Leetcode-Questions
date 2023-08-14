@@ -15,14 +15,14 @@ public:
 	    
 	    while (low <= high) {
 	        if (S[low] != S[high]) {
-	            return 0;  // If characters don't match, it's not a palindrome.
+	            return 0;  
 	        }
 	        
 	        low++;
 	        high--;
 	    }
 	    
-	    return 1;  // If the loop completes without returning 0, it's a palindrome.
+	    return 1;  
 	}
 };
 
