@@ -16,17 +16,17 @@ class Solution
         
         while(mid<=high){
             
-            if(a[mid] ==0){
+            if(a[mid] == 0){
                 swap(a[low], a[mid]);
                 low++;
                 mid++;
             }
             
-            else if(a[mid]==1){
+            else if(a[mid] == 1){
                 mid++;
             }
             
-            else{
+            else if(a[mid] == 2){
                 swap(a[mid], a[high]);
                 high--;
             }
