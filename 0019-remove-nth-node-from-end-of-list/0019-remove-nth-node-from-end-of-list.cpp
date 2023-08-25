@@ -12,24 +12,27 @@ class Solution {
 public:
     ListNode* removeNthFromEnd(ListNode* head, int n) {
         
+       ListNode* dummynode = new ListNode;
+        dummynode->next = head;
         
-        ListNode* fast=head;
-        ListNode* slow=head;
+        ListNode* slow = dummynode;
+        ListNode* fast = dummynode;
         
-        for(int i=0; i<n; i++){
+        if(head == NULL && head->next == NULL){
+            return NULL;
+        }
+        
+        for(int i = 0; i<n; i++){
             fast=fast->next;
         }
         
-        if(fast==NULL){
-            return head->next;
-        }
-        
-        while(fast->next!=NULL){
+        while(fast!=NULL && fast->next!=NULL){
+            fast=fast->next;
             slow=slow->next;
-            fast=fast->next;
         }
         
         slow->next=slow->next->next;
-        return head;
+        return dummynode->next;
+        
     }
 };
